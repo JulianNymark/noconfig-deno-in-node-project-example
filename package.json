@@ -1,0 +1,17 @@
+{
+  "name": "test-deno-util-in-node-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "node": "node main.js",
+    "deno": "deno run --allow-read --allow-net --allow-env --no-config scripts/deno/main.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "type": "module"
+}
