@@ -28,6 +28,5 @@ Deno works great side-by-side with Node this way.
 ```
 
 ## why do this?
-- Separation of concerns, now you have two separate runtimes (node and deno) each with their own completely separate dependencies / caches! They can live in the same repository without stepping on each others toes. (but they can still share code with each other)
-- Not every developer needs to download all packages in `devDependencies` + `dependencies` beforehand to work on a subset of your repo, rarely used utility can now depend on big clunky packages! Only download dependencies _when they are used_.
-- deno has some nice things (security model, `--allow-read` ... first class TS support... etc)
+- Separation of concerns, now you have two separate runtimes (node and deno) each with their own completely separate dependencies / caches! They can live in the same repository without stepping on each others toes. (but they can still share code with each other if desired), we wanted to make a small utility script that did something "quick and easy on the side" without polluting our existing package.json with "related but... also kinda unrelated" code. We first looked into using `ts-node`, but it's a bit tightly integrated with node itself, and expects you to modify package.json (eg. we couldn't just set something like `type: "module"`...).
+- Deno has some nice things (security model, `--allow-read` ... first class TS support... only download packages when they are needed... etc)
