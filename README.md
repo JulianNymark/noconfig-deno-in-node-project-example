@@ -1,12 +1,9 @@
 # deno inside your node project!?
 Tiny example of a mix (best of both worlds!) of deno and node!
 
-run `npm run deno` to run the deno script
-run `npm run node` to run the node script
-
-notice there is no "deno stuff" in your node_modules :tada:
-
-browse the repository to see how they work!
+- run `npm run deno` to run the deno script
+- run `npm i` + `npm run node` to run the node script
+- notice there is no "deno stuff" in your node_modules :tada: (deno dependencies are usually cached in ~/Library/Caches/deno)
 
 # noconfig deno!
 - `deno run --no-config my_script.ts` in your npm/yarn scripts
